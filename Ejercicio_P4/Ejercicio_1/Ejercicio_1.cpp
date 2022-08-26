@@ -22,9 +22,9 @@ int main(int argc, char const *argv[])
     int numeros[n];
 	int pos,aux;
 	
-     for(int l=0;l<n;l++){
-       cout<<"\n\tNumero #"<<l+1<<" :";
-	   cin>>numeros[l];
+     for(int o=0;o<n;o++){
+       cout<<"\n\tNumero #"<<o+1<<" :";
+	   cin>>numeros[o];
 	   cout<<"\n";
 	 }
 
