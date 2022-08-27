@@ -28,10 +28,14 @@ int main(int argc, char const *argv[])
           cout<<fila;
            cout<<"\t Selecciono la area de un cirulo\n";
           cout<<fila;
-           cout<<"\t porfavor introducir el radio: \n";
+           cout<<"\t porfavor introducir el radio: ";
            cin>>dato;
           cout<<fila;
+           if(dato>0){
            cout<<"\t La respuesta es: "<<circulo(dato)<<" m^2";
+        }else{
+           cout<<"\t Dato incorrecto \n";
+        }
           cout<<fila;
 
 
@@ -43,7 +47,11 @@ int main(int argc, char const *argv[])
            cout<<"\n\t porfavor introducir un lado: ";
            cin>>dato;
         cout<<fila;
+        if(dato>0){
            cout<<"\tLa respuesta es: "<<cuadrado(dato)<<" m^2";
+        }else{
+           cout<<"\t Dato incorrecto \n";
+        }
         cout<<fila;
         break;
     case 'c':
@@ -55,7 +63,11 @@ int main(int argc, char const *argv[])
            cout<<"\n\t porfavor introducir la altura: ";
            cin>>dato2;
         cout<<fila;
+          if(dato>0 && dato2>0){
            cout<<"\tLa respuesta es: "<<rectangulo(dato,dato2)<<" m^2";
+        }else{
+           cout<<"\t Dato incorrecto \n";
+        }
         cout<<fila;
         break;
     case 'd':
@@ -67,7 +79,12 @@ int main(int argc, char const *argv[])
            cout<<"\n\t porfavor introducir la altura: ";
            cin>>dato2;
         cout<<fila;
+          if(dato>0 && dato2>0){
+           
            cout<<"\tLa respuesta es: "<<triangulo(dato,dato2)<<" m^2";
+        }else{
+           cout<<"\t Dato incorrecto \n";
+        }
         cout<<fila;
         break;
     
